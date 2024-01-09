@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Table of Scientists</title>
+  </head>
+  <body>
+    <h1>Table of Scientists 🔭</h1>
+    <div id="wrapper">
+      <div id="table-block">
+        <div id="head">
+          <button class="btn-small" id="filter">
+            <img src="svg/filter.svg" alt="filter" />
+          </button>
+          <label class="input-bar">
+            <img src="svg/search.svg" alt="search" />
+            <input
+              type="search"
+              name="search-bar"
+              id="search"
+              placeholder="Search..."
+            />
+          </label>
+          <button id="btn-remove" class="btn-small">
+            <img src="svg/trash.svg" alt="delete" /><span
+              id="remove-count"
+            ></span>
+          </button>
+          <button class="btn-blue" id="btn-add">+ Add scientist</button>
+        </div>
+        <div class="scrollable">
+          <table>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Country</th>
+                <th>Achievements</th>
+              </tr>
+            </thead>
+
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+        <div class="glass"><span id="person-counter">Persons: 3</span></div>
+      </div>
+    </div>
+  </body>
+</html>
